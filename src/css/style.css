@@ -8,6 +8,12 @@ img {
   width: 1170px;
   margin: auto;
 }
+.button {
+  border-radius: 10px;
+  background-color: #ffd200;
+  border: none;
+  padding: 18px 30px;
+}
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -19,11 +25,15 @@ img {
     width: 95%;
   }
 }
-.button {
-  border-radius: 10px;
-  background-color: #ffd200;
-  border: none;
-  padding: 18px 30px;
+@media (max-width: 567px) {
+  .container {
+    max-width: 550px;
+    width: 95%;
+  }
+  .button {
+    border-radius: 5px;
+    background-color: #ffd200;
+  }
 }
 /* Импорт стилей шапки */
 .navbar {
@@ -45,6 +55,7 @@ img {
 }
 .navbar__button {
   margin-left: 30px;
+  font-size: 13px;
 }
 .navbar__phone {
   display: inline-block;
@@ -55,15 +66,44 @@ img {
   text-decoration: none;
   margin-top: 10px;
 }
+.navbar__address {
+  font-size: 13px;
+}
 @media (max-width: 768px) {
   .navbar__contacts {
     display: none;
   }
   .navbar__button {
-    font-size: 12px;
     padding: 12px 26px;
+    color: #333333;
+    font-family: "Museo Sans Cyrl -700";
+    font-size: 10px;
+    font-weight: 700;
   }
   .navbar__logo {
     width: 90px;
+  }
+}
+@media (max-width: 567px) {
+  .navbar__contacts {
+    display: none;
+  }
+  .navbar__button {
+    padding: 12px 26px;
+    color: #333333;
+    font-family: "Museo Sans Cyrl -700";
+    font-size: 10px;
+    font-weight: 700;
+    width: 137px;
+    height: 39px;
+  }
+  .navbar__logo {
+    width: 90px;
+  }
+  .navbar__info {
+    justify-content: space-around;
+  }
+  .navbar-block {
+    justify-content: space-around;
   }
 }

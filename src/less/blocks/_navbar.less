@@ -18,6 +18,7 @@
   }
   &__button {
     margin-left: 30px;
+    font-size: 13px;
   }
 
   &__phone {
@@ -29,6 +30,10 @@
     text-decoration: none;
     margin-top: 10px;
     }
+
+    &__address {
+      font-size: 13px;
+    } 
 }
 
 
@@ -38,11 +43,43 @@
       display: none;
     }
     &__button {
-      font-size: 12px;
       padding: 12px 26px;
+      color: #333333;
+      font-family: "Museo Sans Cyrl -700";
+      font-size: 10px;
+      font-weight: 700;
     }
     &__logo {
       width: 90px;
     }
   }
 }
+
+@media (max-width: 567px) {
+  .navbar {
+    &__contacts {
+      display: none;
+    }
+    &__button {
+      padding: 12px 26px;
+      color: #333333;
+      font-family: "Museo Sans Cyrl -700";
+      font-size: 10px;
+      font-weight: 700;
+      width: 137px;
+      height: 39px;
+
+    }
+    &__logo {
+      width: 90px;
+    }
+    &__info {
+      justify-content: space-around;
+    }
+    &-block {
+      justify-content: space-around;
+    }
+  }
+}
+
+
