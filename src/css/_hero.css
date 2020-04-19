@@ -5,6 +5,7 @@
   display: flex;
 }
 .hero-text {
+  align-self: start;
   flex-basis: 50%;
   padding-right: 140px;
 }

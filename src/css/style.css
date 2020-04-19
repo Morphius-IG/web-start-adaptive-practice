@@ -113,9 +113,9 @@ img {
 }
 .hero-block {
   display: flex;
-  align-items: center;
 }
 .hero-text {
+  align-self: start;
   flex-basis: 50%;
   padding-right: 140px;
 }
