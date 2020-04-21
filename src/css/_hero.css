@@ -1,3 +1,17 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url('../fonts/MuseoSansCyrl-300.eot');
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansCyrl-300.woff') format('woff'), url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url('../fonts/MuseoSansCyrl-700.eot');
+  src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansCyrl-700.woff') format('woff'), url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
 .hero {
   padding: 50px 0;
 }
@@ -11,15 +25,17 @@
 }
 .hero-text__title {
   font-size: 41px;
-  font-weight: 700;
   line-height: 55px;
   margin-bottom: 40px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 .hero-text__subtitle {
   display: inline-block;
   font-size: 20px;
-  font-weight: 500;
   margin-bottom: 70px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 .hero-list {
   margin: 0;
