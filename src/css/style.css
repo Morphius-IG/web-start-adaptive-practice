@@ -22,6 +22,19 @@ img {
   background-color: #ffdb33;
   cursor: pointer;
 }
+.up-button {
+  margin-top: 10px;
+  background: none;
+}
+.up-button:hover {
+  background: none;
+  color: #ffd200;
+  cursor: pointer;
+}
+.up-button:active,
+.up-button:focus {
+  outline: none;
+}
 .section {
   padding: 90px 0;
 }
