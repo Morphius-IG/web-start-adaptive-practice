@@ -40,6 +40,10 @@ img {
   font-size: 15px;
   border-radius: 10px;
 }
+.input:focus {
+  outline: none;
+  border-color: #ffd200;
+}
 @media (max-width: 1200px) {
   .container {
     width: 760px;
@@ -160,7 +164,7 @@ img {
 .hero-text {
   align-self: start;
   flex-basis: 50%;
-  padding-right: 140px;
+  padding-right: 100px;
 }
 .hero-text__title {
   font-size: 41px;
