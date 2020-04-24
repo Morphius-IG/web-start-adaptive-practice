@@ -1,0 +1,62 @@
+.offer {
+  background: url('../img/offer/offer-bg.png') no-repeat;
+  background-size: 50%;
+  background-position: center right;
+  position: relative;
+}
+.offer::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  background-color: white;
+  top: 0;
+  left: 0;
+}
+.offer-block {
+  position: relative;
+  width: 50%;
+  padding-right: 90px;
+}
+.offer__title {
+  max-width: 360px;
+  line-height: 35px;
+  margin-bottom: 24px;
+}
+.offer__subtitle {
+  display: block;
+  max-width: 250px;
+  margin-bottom: 30px;
+}
+.offer__input {
+  margin-bottom: 30px;
+  width: 240px;
+}
+.offer__input:first-child {
+  margin-right: 10px;
+}
+.offer__button {
+  width: 100%;
+  min-height: 70px;
+}
+@media (max-width: 1200px) {
+  .offer {
+    background-size: cover;
+  }
+  .offer__input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  .offer__button {
+    font-size: 13px;
+  }
+}
+@media (max-width: 768px) {
+  .offer {
+    background: #fff;
+  }
+  .offer-block {
+    width: 100%;
+    padding-right: 0;
+  }
+}
