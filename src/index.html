@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Адаптивная вёрстка</title>
    <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/slick.css">
    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -74,8 +75,7 @@
     <section class="offer section">
       <div class="container">
         <div class="offer-block">
-          <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!
-            </h2>
+          <h2 class="section-title offer__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и реализуем его!</h2>
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
@@ -91,6 +91,34 @@
         <!-- /.container -->
       </section>
       <!-- /.offer -->
+
+      <section class="section portfolio">
+        <div class="container">
+          <h2 class="section-title portfolio__title">Работая с 2007 года, мы сделали более 500 ремонтов в квартирах и домах</h2>
+          <div class="slider">
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slide-1.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slide-2.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slide-3.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slide-1.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slide-2.jpg" alt=""></div>
+            <div class="slider__item"><img class="slider__image" src="img/portfolio/slide-3.jpg" alt=""></div>
+          </div>
+
+          <div class="arrows portfolio__arrows">
+            <div class="arrows__left">
+              <img src="img/portfolio/left-arrow.png" alt="Левая стрелка">
+            </div>
+            <div class="arrows__right">
+              <img src="img/portfolio/right-arrow.png" alt="Правая стрелка">
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
   </main>
 
 <div class="modal" id="modal">
@@ -106,6 +134,36 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/slick.min.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $('.slider').slick({
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      prevArrow: $('.arrows__left'),
+      nextArrow: $('.arrows__right'),
+      responsive: [
+      {
+      breakpoint: 1200,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 1
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+      ]
+    });
+  })
+
+
+</script>
 
 </body>
 </html>

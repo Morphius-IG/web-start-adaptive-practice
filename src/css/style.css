@@ -39,6 +39,7 @@ img {
   padding: 90px 0;
 }
 .section-title {
+  text-align: center;
   font-size: 24px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
@@ -56,6 +57,10 @@ img {
 .input:focus {
   outline: none;
   border-color: #ffd200;
+}
+.arrows__left:hover,
+.arrows__right:hover {
+  cursor: pointer;
 }
 @media (max-width: 1200px) {
   .container {
@@ -269,6 +274,7 @@ img {
   padding-right: 90px;
 }
 .offer__title {
+  text-align: left;
   max-width: 360px;
   line-height: 35px;
   margin-bottom: 24px;
@@ -338,3 +344,23 @@ img {
   right: 0;
 }
 /* Импорт стилей модального окна */
+.portfolio {
+  background: #f5f5f5 url('../img/portfolio/portfolio-pattern.jpg') repeat-y center left;
+  background-size: 50%;
+}
+.portfolio__title {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 100px;
+}
+.portfolio__arrows {
+  max-width: 120px;
+  margin: auto;
+  margin-top: 68px;
+  display: flex;
+  justify-content: space-between;
+}
+.slider__image {
+  margin: auto;
+}
+/* Импорт стилей блока "Портфолио" */
