@@ -78,9 +78,28 @@ img {
   }
 }
 
+.invalid {
+  border: 1px solid red;
+  &:focus {
+    border: 1px solid red;
+  }
+}
 
+.not-error {
+  border: none;
+}
 
+div {
+  .invalid {
+    margin-bottom: 15px;
+  }
+}
 
+div {
+  .invalid:last-child {
+      margin-bottom: 0;
+    }
+}
   
 
 @media (max-width: 1200px) {

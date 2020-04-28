@@ -63,6 +63,21 @@ img {
 .arrows__right:hover {
   cursor: pointer;
 }
+.invalid {
+  border: 1px solid red;
+}
+.invalid:focus {
+  border: 1px solid red;
+}
+.not-error {
+  border: none;
+}
+div .invalid {
+  margin-bottom: 15px;
+}
+div .invalid:last-child {
+  margin-bottom: 0;
+}
 @media (max-width: 1200px) {
   .container {
     width: 760px;
