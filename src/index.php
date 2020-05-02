@@ -13,6 +13,7 @@
    <script type="text/javascript" > (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)}; m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)}) (window, document, "script", "https://cdn.jsdelivr.net/npm/yandex-metrica-watch/tag.js", "ym"); ym(62410420, "init", { clickmap:true, trackLinks:true, accurateTrackBounce:true, webvisor:true, trackHash:true }); </script> <noscript><div><img src="https://mc.yandex.ru/watch/62410420" style="position:absolute; left:-9999px;" alt="" /></div></noscript> <!-- /Yandex.Metrika counter -->
 </head>
 <body>
+
   <nav class="navbar">
     <div class="container">
       <div class="navbar-block">
@@ -82,7 +83,7 @@
           <!-- /.section-title -->
           <span class="section-subtitle offer__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</span>
           <!-- /.section-subtitle -->
-            <form action="#" id='first-form' class="form offer__form">
+            <form action="send.php" method="POST" id='first-form' class="form offer__form">
               <input type="text" name="username" class="input offer__input" placeholder="Ваше имя">
               <input type="tel" name="phone" class="input offer__input phone-number" placeholder="Ваш телефон">
               <button class="button offer__button">Получить бесплатный дизайн-проект</button>
@@ -444,6 +445,35 @@ $('#first-form').validate({
   })
 
 
+</script>
+
+
+
+<script>
+// Отправка данных на сервер
+$('#form').trigger('reset');
+$(function() {
+  'use strict';
+  $('#form').on('submit', function(e) {
+    e.preventDefault();
+    $.ajax({
+      url: 'send.php',
+      type: 'POST',
+      contentType: false,
+      processData: false,
+      data: new FormData(this),
+      success: function(msg) {
+        console.log(msg);
+        if (msg == 'ok') {
+          alert('Сообщение отправлено');
+          $('#form').trigger('reset'); // очистка формы
+        } else {
+          alert('Ошибка');
+        }
+      }
+    });
+  });
+});
 </script>
 
 </body>

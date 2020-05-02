@@ -1,0 +1,23 @@
+{
+  "name": "web-start-adaptive-practice",
+  "version": "1.0.0",
+  "description": "Практика на адаптив",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Morphius-IG/web-start-adaptive-practice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Morphius-IG/web-start-adaptive-practice/issues"
+  },
+  "homepage": "https://github.com/Morphius-IG/web-start-adaptive-practice#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  }
+}
